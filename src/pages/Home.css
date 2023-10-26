@@ -1,0 +1,17 @@
+
+.hero-conainer{
+    max-width: 500px;
+}
+.hero-title{
+    font-size: clamp(30px,11vw,60px);
+    
+}
+
+.hero-caption{
+    font-size: clamp(25px,8vw,40px);
+}
+@media(max-width: 1086px){
+    .first, .second{
+        display: block;
+    }
+    }  
