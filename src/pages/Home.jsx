@@ -1,24 +1,25 @@
 import Cards from '../components/cards/Cards'
+import Constelar from '../components/texts/constelar'
+
 import './Home.css'
 
 
 const Home = () => {
   return (
-    <main className='main-container'>
+    <>
+      <main className='main-container'>
         <section className="hero-container">
           <h1 className="hero-title"><span className='first'>Nuevas </span><span className='second'>Constelaciones </span><span className='third'>Familiares</span></h1>
           <h2 className="hero-caption">Mariel Hilgert</h2>
         </section>
-        <section className='sn-container'>
-          <h2>¿Que es constelar?</h2>
-          <p>constelar es .....</p>
-        </section>
+          <Constelar />
+      </main>
         <section className='th-container'>
           <h2>¡Prueba tu mismo!</h2>
           <Cards />
         </section>
         
-    </main>
+    </>
   )
 }
 

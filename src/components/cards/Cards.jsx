@@ -1,21 +1,35 @@
 import styled from "styled-components"
 import Card from "./Card"
+import img1 from "../../assets/imgSlider/img1.png"
+import img2 from "../../assets/imgSlider/img2.jpg"
+import img3 from "../../assets/imgSlider/img3.png"
+import img4 from "../../assets/imgSlider/img4.jpg"
+import img5 from "../../assets/imgSlider/img5.jpg"
+import img6 from "../../assets/imgSlider/img6.jpg"
+import Slider from "../Slider/Slider"
+
+const images_indiv = [img1,img2,img3];
+const images_group = [img4,img5,img6];
+const images_online = [img3,img6,img2];
 
 const cards_data = [
     {
         id: 1,
-        title: "Constelaciones Grupales",
-        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando`
+        title: "Grupales",
+        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando`,
+        images: images_indiv,
     },
     {
         id: 2,
-        title: "Constelaciones Individuales",
-        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó `
+        title: "Individuales",
+        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó`,
+        images: images_group,
     },
     {
         id: 3,
-        title: "Constelaciones Online",
-        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. `
+        title: "Online",
+        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen.`,
+        images:images_online,
     }
 ]
 
@@ -26,7 +40,8 @@ const cards_data = [
         {
             cards_data.map(card =>(
                 <ContainerInfoCard key={card.id}>
-                    <Card title={card.title} text={card.text} />
+                    <Slider images={card.images} autoPlay={true}/>
+                    <Card title={card.title} text={card.text}/>
                 </ContainerInfoCard>
             ))       
         }
@@ -37,12 +52,17 @@ const ContainerCards = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    @media(max-width: 700px){
+    @media(max-width: 715px){
         flex-direction: column;
     }
 `;
 const ContainerInfoCard = styled.div` 
-    max-width: 260px;
-    padding: 0 20px;
+    width: 220px;
+    height: 410px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    @media(max-width: 700px){
+        margin: 10px 0;
+    }
 `;
 export default Cards;
