@@ -1,7 +1,11 @@
-
 import { useState, useEffect } from "react"
 import styled from "styled-components";
 
+// eslint-disable-next-line no-unused-vars
+const props_img = {
+  images: [],
+  autoPlay: true,
+}
 
 export default function Slider (props_img){
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -38,14 +42,8 @@ const CarouselContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 50px 20px;
-  @media(max-width: 811px){
-    padding: 50px 80px;
-  }
 `;
 const CarouselImg = styled.img`
-  max-width: 350px;
   width: 100%;
   height: auto;
   opacity: 0;

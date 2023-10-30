@@ -1,10 +1,6 @@
+import Cards from '../components/cards/Cards'
 import './Home.css'
-import img1 from "../assets/images/imgSlider/img1.png"
-import img2 from "../assets/images/imgSlider/img2.jpg"
-import img3 from "../assets/images/imgSlider/img3.png"
-import Slider from '../components/Slider/Slider'
 
-const images = [img1, img2, img3];
 
 const Home = () => {
   return (
@@ -13,10 +9,15 @@ const Home = () => {
           <h1 className="hero-title"><span className='first'>Nuevas </span><span className='second'>Constelaciones </span><span className='third'>Familiares</span></h1>
           <h2 className="hero-caption">Mariel Hilgert</h2>
         </section>
-        <Slider images={images} autoPlay={true}/>
-        <Slider images={images} autoPlay={true}/>
-        <Slider images={images} autoPlay={true}/>
-        <Slider images={images} autoPlay={true}/>
+        <section className='sn-container'>
+          <h2>¿Que es constelar?</h2>
+          <p>constelar es .....</p>
+        </section>
+        <section className='th-container'>
+          <h2>¡Prueba tu mismo!</h2>
+          <Cards />
+        </section>
+        
     </main>
   )
 }
