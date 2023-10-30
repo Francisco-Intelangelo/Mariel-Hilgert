@@ -1,5 +1,5 @@
 import Cards from '../components/cards/Cards'
-import Constelar from '../components/texts/constelar'
+import Constelar from '../components/texts/constelar/Constelar'
 
 import './Home.css'
 
