@@ -13,11 +13,8 @@ const Home = () => {
           <h2 className="hero-caption">Mariel Hilgert</h2>
         </section>
         <Constelar/>
+        <Cards />
       </main>
-        <section className='th-container'>
-          <h2>¡Prueba tu mismo!</h2>
-          <Cards />
-        </section>
         
     </>
   )

@@ -6,7 +6,7 @@ import "./Card.css"
       <div className="info-card">
         <h3 className="title-card">{cards_data.title}</h3>
         <p className="txt-card">{cards_data.text}</p>
-        <a href="#" className="button-card">Contratar servicio</a>
+        <a className="button-card" href="#">Solicitar Turno</a>
       </div>
     </div>
   )

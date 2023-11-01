@@ -14,12 +14,6 @@ const images_online = [img3,img6,img2];
 
 const cards_data = [
     {
-        id: 1,
-        title: "Grupales",
-        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando`,
-        images: images_indiv,
-    },
-    {
         id: 2,
         title: "Individuales",
         text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó`,
@@ -30,24 +24,39 @@ const cards_data = [
         title: "Online",
         text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen.`,
         images:images_online,
+    },
+    {
+        id: 1,
+        title: "Grupales",
+        text: `textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando`,
+        images: images_indiv,
     }
 ]
 
 
  const Cards = () => {
   return (
-    <ContainerCards>
-        {
-            cards_data.map(card =>(
-                <ContainerInfoCard key={card.id}>
-                    <Slider images={card.images} autoPlay={true}/>
-                    <Card title={card.title} text={card.text}/>
-                </ContainerInfoCard>
-            ))       
-        }
-    </ContainerCards>
+    <DivCards>
+        <TitleContainer>¡Prueba tu mismo!</TitleContainer>
+        <ContainerCards>
+            {
+                cards_data.map(card =>(
+                    <ContainerInfoCard key={card.id}>
+                        <Slider images={card.images} autoPlay={true}/>
+                        <Card title={card.title} text={card.text}/>
+                    </ContainerInfoCard>
+                ))       
+            }
+        </ContainerCards>
+    </DivCards>
   )
 }
+const DivCards = styled.div`
+    height: 100%;
+`;
+const TitleContainer = styled.h2`
+    font-size: 1.4em;
+`;
 const ContainerCards = styled.div`
     display: flex;
     justify-content: center;
