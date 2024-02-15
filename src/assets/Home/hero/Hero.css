@@ -1,0 +1,35 @@
+.hero-container{
+  background-color: #C2AAFF;
+  padding: 40px 0;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 60vh;
+  margin: 0 22px;
+}
+.hero-title{
+  color: #FFFFFF;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+}
+.span-title{
+  display: block;
+}
+.hero-caption{
+  color: #FFFFFF;
+  margin: 30px 0 0 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.hero-txt{
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 18px;
+
+}

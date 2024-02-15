@@ -1,0 +1,59 @@
+.contact-container{
+  background-color: #323232;
+  padding: 30px 0;
+}
+.contact-title{
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+.more-info-mail{
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  gap: 2rem;
+  width: 100%;
+}
+.label{
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.input{
+  display: block;
+  width: 300px;
+  height: 30px;
+  padding: 16px;
+  color: #323232;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.textarea{
+  display: block;
+  min-width: 300px;
+  width: 300px;
+  max-width: 300px;
+  height: 80px;
+  padding: 16px;
+}
+.btn-submit{
+  border: none;
+  background-color: #C2AAFF;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}

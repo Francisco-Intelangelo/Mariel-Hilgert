@@ -1,0 +1,31 @@
+.info-home-container{
+  margin: 30px 22px;
+
+}
+.info-title-home{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.info-home{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.btn-more-info{
+  border: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #C2AAFF;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.arrow-right{
+  width: 28px;
+}

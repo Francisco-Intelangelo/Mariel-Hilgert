@@ -1,0 +1,40 @@
+.services-container{
+  background-color: rgb(50, 50, 50);
+  padding: 30px 0;
+}
+.services{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.services-title{
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+.const-online, .curses-grup{
+  display: flex;
+  gap: 1.5rem;
+}
+.services-photo{
+  width: 140px;
+  height: 140px;
+}
+.caption-services{
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+.see-more{
+  border: none;
+  background-color: #C2AAFF;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
