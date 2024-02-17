@@ -14,9 +14,9 @@
   margin: 0;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  font-size: 46px;
 }
 .span-title{
+  font-size: 42px;
   display: block;
 }
 .hero-caption{
@@ -30,6 +30,6 @@
   font-family: 'Poppins', sans-serif;
   color: #FFFFFF;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
 
 }

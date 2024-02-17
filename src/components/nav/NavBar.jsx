@@ -1,8 +1,8 @@
-import Home from "../pages/Home"
-import logo from "../assets/LogoMariel.svg"
-import HomeLogo from "../assets/NavBar/Home.svg"
-import Video from "../assets/NavBar/Video.svg"
-import Search from "../assets/NavBar/Search.svg"
+import Home from "../../pages/Home"
+import logo from "../../assets/LogoMariel.svg"
+import HomeLogo from "../../assets/NavBar/Home.svg"
+import Video from "../../assets/NavBar/Video.svg"
+import Search from "../../assets/NavBar/Search.svg"
 import "./NavBar.css"
 const NavBar = () => {
   return (
