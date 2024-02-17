@@ -1,6 +1,6 @@
 import "./Services.css"
-import servicesImg1 from "./assetsServices/ejemplo1.jpg"
-import servicesImg2 from "./assetsServices/ejemplo2.jpg"
+import servicesImg1 from "../../assets/Home/assetsServices/ejemplo1.jpg"
+import servicesImg2 from "../../assets/Home/assetsServices/ejemplo2.jpg"
 const Services = () => {
   return (
     <section className="services-container">

@@ -1,6 +1,6 @@
 import "./Opinions.css"
-import person1 from "./assetsOpinions/anny.jpg"
-import person2 from "./assetsOpinions/noah.jpg"
+import person1 from "../../assets/Home/assetsOpinions/anny.jpg"
+import person2 from "../../assets/Home/assetsOpinions/noah.jpg"
 
 const Opinions = () => {
   return (

@@ -20,7 +20,6 @@
   align-items: center;
   margin-top: 30px;
   gap: 2rem;
-  width: 100%;
 }
 .label{
   color: #FFFFFF;
@@ -30,7 +29,7 @@
 }
 .input{
   display: block;
-  width: 300px;
+  width: 250px;
   height: 30px;
   padding: 16px;
   color: #323232;
@@ -40,9 +39,9 @@
 }
 .textarea{
   display: block;
-  min-width: 300px;
-  width: 300px;
-  max-width: 300px;
+  min-width: 250px;
+  width: 250px;
+  max-width: 250px;
   height: 80px;
   padding: 16px;
 }

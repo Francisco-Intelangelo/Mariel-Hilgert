@@ -1,8 +1,8 @@
-import Hero from "../assets/Home/hero/Hero"
-import Info from "../assets/Home/info/Info"
-import Opinions from "../assets/Home/opinions/Opinions"
-import Services from "../assets/Home/services/Services"
-import Contact from "../assets/Home/contact/Contact"
+import Hero from "../components/hero/Hero"
+import Info from "../components/info/Info"
+import Opinions from "../components/opinions/Opinions"
+import Services from "../components/services/Services"
+import Contact from "../components/contact/Contact"
 
 const Home = () => {
   return (
