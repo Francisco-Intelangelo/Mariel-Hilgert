@@ -1,6 +1,6 @@
 .services-container{
   background-color: rgb(50, 50, 50);
-  padding: 30px 0;
+  padding: 30px 0 50px;
 }
 .services{
   display: flex;
@@ -12,8 +12,9 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 28px;
+  margin: 0;
 }
-.const-online, .curses-grup{
+.service-card{
   display: flex;
   gap: 1.5rem;
 }
