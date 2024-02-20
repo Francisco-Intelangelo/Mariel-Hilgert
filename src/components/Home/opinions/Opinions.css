@@ -14,6 +14,11 @@
   font-size: 28px;
   margin: 0;
 }
+.opinion-container-card{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 .person-info{
   display: flex;
   gap: 1.5rem;
@@ -35,4 +40,19 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 12px;
+}
+@media(min-width: 800px){
+  .opinion-container{
+    display: flex;
+    justify-content: center;
+  }
+  .opinion{
+    justify-content: start;
+    width: 800px;
+  }
+  .opinion-container-card{
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
 }

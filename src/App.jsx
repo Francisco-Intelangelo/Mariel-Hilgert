@@ -1,12 +1,34 @@
+import { Route, Routes, useLocation } from 'react-router-dom'
+import { useLayoutEffect } from 'react'
+import NavBar from './components/NavBar/NavBar'
 import Home from './pages/Home'
-import NavBar from './components/nav/NavBar'
+import Questions from './pages/Questions'
+import "./App.css"
+import Footer from './components/Footer/Footer'
+
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
+
 
 function App() {
   return (
-    <main className="App">
+    <>
       <NavBar/>
-      <Home/>
-    </main>
+      <Wrapper>
+        <main className="App">
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/questions' element={<Questions/>}/>
+          </Routes>
+        </main>
+      </Wrapper>
+      <Footer/>
+    </>
   )
 }
 

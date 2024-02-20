@@ -28,3 +28,14 @@
 .arrow-right{
   width: 28px;
 }
+@media (min-width: 800px) {
+  .info-home-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-title-home, .info-home{
+    max-width: 800px;
+  }
+}

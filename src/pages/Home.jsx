@@ -1,19 +1,17 @@
-import Hero from "../components/hero/Hero"
-import Info from "../components/info/Info"
-import Opinions from "../components/opinions/Opinions"
-import Services from "../components/services/Services"
-import Contact from "../components/contact/Contact"
+import Hero from "../components/Home/hero/Hero"
+import Info from "../components/Home/info/Info"
+import Opinions from "../components/Home/opinions/Opinions"
+import Services from "../components/Home/services/Services"
+import Contact from "../components/Home/contact/Contact"
 
 const Home = () => {
   return (
     <>
-      <main>
-        <Hero/>
-        <Info/>
-        <Services/>
-        <Opinions/>
-        <Contact/>
-      </main>
+      <Hero/>
+      <Info/>
+      <Services/>
+      <Opinions/>
+      <Contact/>
     </>
   )
 }

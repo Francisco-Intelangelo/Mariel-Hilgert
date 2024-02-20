@@ -1,6 +1,7 @@
 .hero-container{
   background-color: #C2AAFF;
-  padding: 40px 0;
+  width: 100vw;
+  padding: 45px 0 10px;
 }
 .hero{
   display: flex;
@@ -27,9 +28,19 @@
   font-size: 30px;
 }
 .hero-txt{
+  text-wrap: balance;
   font-family: 'Poppins', sans-serif;
   color: #FFFFFF;
   font-weight: 600;
   font-size: 14px;
-
+}
+@media(min-width: 800px){
+  .hero{
+    align-items: center;
+    margin: 0;
+  }
+  .span-title{
+  font-size: 42px;
+  display: inline;
+  }
 }

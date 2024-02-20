@@ -19,8 +19,9 @@
   gap: 1.5rem;
 }
 .services-photo{
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
+  min-width: 150px;
 }
 .caption-services{
   color: #FFFFFF;
@@ -38,4 +39,24 @@
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 14px;
+}
+@media(min-width: 800px){
+  .services-container{
+    display: flex;
+    justify-content: center;
+  }
+  .services{
+    justify-content: start;
+    width: 800px;
+  }
+  .services-title{
+    display: block;
+  }
+  .services-container-card{
+    display: flex;
+    justify-content: space-between;
+  }
+  .service-card{
+    flex-direction: column;
+  }
 }
