@@ -22,6 +22,6 @@
 }
 .icons-container{
   display: flex;
-  width: 200px;
+  width: 30%;
   justify-content: space-between;
 }

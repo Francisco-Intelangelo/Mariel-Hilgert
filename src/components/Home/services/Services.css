@@ -14,6 +14,11 @@
   font-size: 28px;
   margin: 0;
 }
+.services-container-card{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
 .service-card{
   display: flex;
   gap: 1.5rem;
@@ -53,7 +58,7 @@
     display: block;
   }
   .services-container-card{
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
   }
   .service-card{

@@ -1,3 +1,37 @@
 .questions-container{
-  padding: 40px 0;
+  padding: 40px 22px;
+}
+.questions-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+.details-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  border-radius: 8px;
+  border: 1px solid #000;
+  background-color: #C2AAFF;
+}
+details{
+  width: 100%;
+}
+summary{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  padding: 5px;
+}
+summary::marker{
+  color: #FFF;
+}
+.detail-text{
+  background-color: #C2AAFF;
+  margin: 0 10px;
+  text-align: start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #000000;
 }
