@@ -1,0 +1,13 @@
+.footer-container{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.footer{
+  display: flex;
+  gap: 3rem;
+}
+.logo-social{
+  cursor: pointer;
+  width: 32px;
+}

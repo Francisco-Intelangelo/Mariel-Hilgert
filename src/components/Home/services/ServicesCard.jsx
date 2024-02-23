@@ -3,7 +3,7 @@ import "./Services.css"
 const ServicesCard = ({img, title}) => {
   return (
     <article className="service-card">
-      <img src={img} className="services-photo" alt=""/>
+      <img src={img} className="services-photo" alt="" loading="lazy"/>
       <div>
           <h4 className="caption-services">{title}</h4>
           <button className="see-more">Ver más</button>

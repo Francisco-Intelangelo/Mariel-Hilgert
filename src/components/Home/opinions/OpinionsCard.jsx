@@ -3,7 +3,7 @@ import "./Opinions.css"
 const OpinionsCard = ({img, name, text}) => {
   return (
     <article className="service-card">
-      <img src={img} className="person-photo" alt="photo of customer"/>
+      <img src={img} className="person-photo" alt="photo of customer" loading="lazy"/>
       <div>
           <p className="opinion-txt">{text}</p>
           <h4 className="name-people">{name}</h4>

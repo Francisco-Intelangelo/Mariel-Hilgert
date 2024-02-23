@@ -6,15 +6,15 @@ import "./Footer.css"
 
 const Footer = () => {
   return (
-    <footer>
-      <section className="socials">
-            <a>
+    <footer className="footer-container">
+      <section className="footer">
+            <a href="https://www.instagram.com/hilgertmariel/">
               <img src={logoWhatsapp} className="logo-social"/>
             </a>
             <a>
               <img src={logoInstagram} className="logo-social"/>
             </a>
-            <a>
+            <a href="https://www.youtube.com/@MarielHilgert">
               <img src={logoYoutube} className="logo-social"/>
             </a>
             <a>
