@@ -20,12 +20,12 @@
   border-radius: 12px;
 }
 .article-moreinfo-card:nth-child(1n + 2){
-  background-color: #C2AAFF;
-  color: #FFF;
+  background-color: #E8E8E8;
+  color: #000;
 }
 .article-moreinfo-card:nth-child(2n + 1){
-  background-color: #e8e8e8;
-  color: #000;
+  background-color: #C2AAFF;
+  color: #FFF;
 }
 .title-moreinfo-card{
   margin: 0 auto;
@@ -36,5 +36,21 @@
 .text-moreinfo-card{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 14px;
+}
+@media(min-width: 800px){
+  .moreinfo-container{
+    display: flex;
+    justify-content: center;
+  }
+  .moreinfo{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+  .moreinfo-container-card{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 1.5rem;
+  }
 }
