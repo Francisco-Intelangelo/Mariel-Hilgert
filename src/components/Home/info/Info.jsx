@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom"
 import "./Info.css"
 import arrowRight from "./arrow-narrow-right.svg"
 const Info = () => {
@@ -14,7 +15,7 @@ const Info = () => {
           ⭐ Equilibrio, compensación.<br/><br/>
           Nos permiten descubrir la realidad oculta que dirige nuestras decisiones, nuestras emociones y nuestros destinos. Nos llevan a una apertura de la conciencia que va a empezar a transformar nuestra vida. Las constelaciones nos ayudan a estar más vivos, en la fuerza y la responsabilidad del adulto, y a estar centrados en el respeto y en la gratitud. Y con ello nuestras vidas empiezan a cambiar, nos muestran el camino hacia nuestra autonomía y mayor bienestar.
         </p>
-        <button className="btn-more-info">Mas info <img src={arrowRight} className="arrow-right" alt="img arrow right"/></button>
+        <NavLink className="btn-more-info" to="/moreinfo">Más info <img src={arrowRight} className="arrow-right" alt="img arrow right"/></NavLink>
       </article>
     </section>
   )

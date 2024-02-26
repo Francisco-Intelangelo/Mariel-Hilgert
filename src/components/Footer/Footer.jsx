@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <section className="footer">
-            <a href="https://www.instagram.com/hilgertmariel/">
+            <a>
               <img src={logoWhatsapp} className="logo-social"/>
             </a>
-            <a>
+            <a href="https://www.instagram.com/hilgertmariel/">
               <img src={logoInstagram} className="logo-social"/>
             </a>
             <a href="https://www.youtube.com/@MarielHilgert">

@@ -18,10 +18,10 @@
   flex-direction: column;
   background-color: #C2AAFF;
   border-radius: 12px;
-  gap: 2rem;
 }
 details{
-  width: 100%;
+  border-top: 2px solid #FFF;
+  padding: 15px 10px;
 }
 summary{
   cursor: pointer;
@@ -29,11 +29,9 @@ summary{
   font-weight: 500;
   font-size: 16px;
   color: #000000;
-  padding: 5px 10px;
 }
 summary::marker{
   color: #FFF;
-  text-wrap: balance;
 }
 .detail-text{
   margin: 0 10px;

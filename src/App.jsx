@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Questions from './pages/Questions'
 import "./App.css"
 import Footer from './components/Footer/Footer'
+import Reservation from './pages/Reservation'
+import { MoreInfo } from './pages/MoreInfo'
 
 const Wrapper = ({ children }) => {
   const location = useLocation();
@@ -24,6 +26,8 @@ function App() {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/questions' element={<Questions/>}/>
+            <Route path='/reservation' element={<Reservation/>}/>
+            <Route path='/moreinfo' element={<MoreInfo/>}/>
           </Routes>
         </main>
       </Wrapper>
