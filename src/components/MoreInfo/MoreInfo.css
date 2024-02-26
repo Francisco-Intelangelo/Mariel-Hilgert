@@ -1,0 +1,40 @@
+.moreinfo-container{
+  padding: 55px 22px;
+}
+.moreinfo{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.moreinfo-title{
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  margin: 0;
+}
+.article-moreinfo-card{
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+  border-radius: 12px;
+}
+.article-moreinfo-card:nth-child(1n + 2){
+  background-color: #C2AAFF;
+  color: #FFF;
+}
+.article-moreinfo-card:nth-child(2n + 1){
+  background-color: #e8e8e8;
+  color: #000;
+}
+.title-moreinfo-card{
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.text-moreinfo-card{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
