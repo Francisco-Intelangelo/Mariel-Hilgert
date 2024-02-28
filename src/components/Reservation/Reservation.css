@@ -1,0 +1,72 @@
+.reservation-container{
+  padding: 55px 22px 0;
+}
+.reservation{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.reservation-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.reservation-form{
+  display: grid;
+  margin: auto;
+  gap: 2rem;
+}
+.reservation-title-form{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+}
+.reservation-input{
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 16px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #323232;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 400;
+}
+.reservation-select{
+  border: 1px solid #000;
+  border-radius: 12px;
+  padding: 16px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #323232;
+  font-weight: 400;
+  text-align: center;
+}
+.btn-reservation{
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: #C2AAFF;
+  border-radius: 8px;
+  width: 120px;
+  height: 40px;
+  color: #FFFFFF;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin: auto;
+}
+@media(min-width: 800px){
+  .reservation-container{
+    display: flex;
+    justify-content: center;
+  }
+  .reservation{
+    justify-content: start;
+    width: 800px;
+  }
+}

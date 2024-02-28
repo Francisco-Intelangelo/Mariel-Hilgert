@@ -35,7 +35,10 @@
   font-size: 18px;
 }
 .see-more{
-  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   background-color: #C2AAFF;
   border-radius: 8px;
   width: 100px;

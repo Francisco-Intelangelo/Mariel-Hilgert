@@ -1,3 +1,4 @@
+import "../components/Reservation/Reservation.css"
 import { useState } from "react";
 
 const Reservation = () => {
@@ -32,24 +33,26 @@ const Reservation = () => {
   };
 
   return (
-    <div>
-      <h1>Reserva de Turnos</h1>
-      <div>
-        <h2>Selecciona una fecha:</h2>
-        <input type="date" min={getCurrentDate()} onChange={(e) => handleDateChange(e.target.value)} />
-      </div>
-      <div>
-        <h2>Selecciona un horario:</h2>
-        <select onChange={(e) => handleTimeChange(e.target.value)}>
+    <section className="reservation-container">
+      <article className="reservation">
+      <h1 className="reservation-title">Reserva de Turnos</h1>
+      <form className="reservation-form">
+        <h3 className="reservation-title-form">Selecciona una fecha y hora</h3>
+        <input className="reservation-input" type="date" min={getCurrentDate()} onChange={(e) => handleDateChange(e.target.value)} />
+        <select className="reservation-select" id="select-reservation-id" onChange={(e) => handleTimeChange(e.target.value)}>
           <option value="">Selecciona un horario</option>
-          <option value="9:00">9:00</option>
-          <option value="10:00">10:00</option>
-          <option value="11:00">11:00</option>
+          <option>9:00</option>
+          <option>10:00</option>
+          <option>11:00</option>
+          <option>14:00</option>
+          <option>15:00</option>
+          <option>16:00</option>
           {/* Otros horarios disponibles */}
         </select>
-      </div>
-      <button onClick={handlePayment}>Ir a la Pasarela de Pago</button>
-    </div>
+      </form>
+      <button className="btn-reservation" onClick={handlePayment}>Reservar Turno</button>
+      </article>
+    </section>
   );
 };
 

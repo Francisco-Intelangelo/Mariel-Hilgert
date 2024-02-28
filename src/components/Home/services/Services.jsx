@@ -9,9 +9,9 @@ const Services = () => {
       <article className="services" style={{margin:"0 22px"}}>
         <h2 className="services-title">Servicios</h2>
         <div className="services-container-card">
-          <ServicesCard img={gato} title={"Constelaciones Online"}/>
-          <ServicesCard img={po} title={"Cursos y talleres grupales"}/>
-          <ServicesCard img={bugs} title={"Titulados por Insconfa"} />
+          <ServicesCard img={gato} title={"Constelaciones Online"} linkPage="/reservation"/>
+          <ServicesCard img={po} title={"Cursos y talleres grupales"} linkPage="/reservation"/>
+          <ServicesCard img={bugs} title={"Titulados por Insconfa"} linkPage="/reservation"/>
         </div>
       </article>
     </section>
