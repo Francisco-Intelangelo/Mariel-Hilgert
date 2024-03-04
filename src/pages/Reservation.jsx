@@ -2,9 +2,21 @@ import "../components/Reservation/Reservation.css"
 import { useState } from "react";
 
 const Reservation = () => {
+  const [selectedName, setSelectedName] = useState(null);
+  const [selectedSurname, setSelectedSurname] = useState(null);
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
 
+  const handleNameChange = (name) =>{
+    const nameMayus = name
+    nameMayus.charAt(0).toUpperCase() + nameMayus.slice(1)
+    setSelectedName(nameMayus)
+  }
+  const handleSurnameChange = (surname) =>{
+    const surnameMayus = surname
+    surnameMayus.charAt(0).toUpperCase() + surnameMayus.slice(1)
+    setSelectedSurname(surnameMayus)
+  }
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
@@ -15,11 +27,11 @@ const Reservation = () => {
 
   const handlePayment = () => {
     // Aquí iría la lógica para procesar el pago y realizar la reserva
-    if (selectedDate && selectedTime) {
+    if (selectedName && selectedSurname && selectedDate && selectedTime) {
       // Lógica de pasarela de pago y reserva
-      alert(`¡Reserva realizada para el ${selectedDate} a las ${selectedTime}!`);
+      alert(`Gracias por tu reserva ${selectedName.charAt(0).toUpperCase() + selectedName.slice(1)} ${selectedSurname.charAt(0).toUpperCase() + selectedSurname.slice(1)}, reserva realizada para el ${selectedDate} a las ${selectedTime}!`);
     } else {
-      alert('Por favor selecciona una fecha y un horario antes de continuar.');
+      alert('Por favor complete todos los campos antes de continuar.');
     }
   };
 
@@ -37,9 +49,12 @@ const Reservation = () => {
       <article className="reservation">
       <h1 className="reservation-title">Reserva de Turnos</h1>
       <form className="reservation-form">
+        <h3 className="reservation-title-form">Nombre y apellido</h3>
+        <input onChange={(e) => handleNameChange(e.target.value)} placeholder="Nombre" className="reservation-input"/>
+        <input onChange={(e) => handleSurnameChange(e.target.value)} placeholder="Apellido" className="reservation-input"/>
         <h3 className="reservation-title-form">Selecciona una fecha y hora</h3>
         <input className="reservation-input" type="date" min={getCurrentDate()} onChange={(e) => handleDateChange(e.target.value)} />
-        <select className="reservation-select" id="select-reservation-id" onChange={(e) => handleTimeChange(e.target.value)}>
+        <select className="reservation-input" id="select-reservation-id" onChange={(e) => handleTimeChange(e.target.value)}>
           <option value="">Selecciona un horario</option>
           <option>9:00</option>
           <option>10:00</option>
